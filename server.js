@@ -1,12 +1,10 @@
 const express = require('express');
 const mustache = require('mustache-express');
-const MongoClient = require('mongodb').MongoClient;
 
 const indexController = require('./controller/index-controller');
 const filterController = require('./controller/filter-controller');
 
 var application = express();
-
 
 application.engine('mustache', mustache());
 application.set('views', './views');
