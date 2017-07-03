@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+
+header a {
+    margin: 15px;
+    text-decoration: none;
+}
+
+header a:visited {
+    color: blue;
+}
+
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+.user-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.user-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 5px;
+    border: .5px solid gray;
+    width: calc(25% - 40px);
+    height: 300px;
+}
+
+.user-card a {
+    margin-top : 10px;
+    margin-bottom: 10px;
+}
+
+.name {
+    font-size: 26px;
+    font-weight: bolder;
+    margin: 0px;
+    color: #367DCA;
+}
+
+.available {
+    color: #D77F74;
+}
+
+.user-pic {
+    margin-bottom: 20px;
+    width: 50%;
+}
+
+.hired {
+    color: gray;
+    text-align: center;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    width:75%;
+    padding-top: 15px;
+    margin: auto;
+}
+
+.rounded-pic {
+    padding: 10px;
+    border-radius: 50%;
+    border: .5px solid gray;
+}
+
+.single-page-name {
+    display: block;
+    width: 80%;
+    font-weight: lighter;
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+.personal-info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 10px;
+    width: calc(100% - 20px);
+}
+
+.education-and-skills {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    padding-top: 20px;
+    margin: auto;
+}
+
+.phone, .job-info {
+    border-left: 1px solid black;
+    margin-left: 10px;
+    padding-left: 10px;
+}
+
+.inside-info {
+    padding-left: 20px;
+    width: 80%;
+}
+
+.email-and-phone {
+    display: flex;
+    padding: 5px;
+}
+
+p {
+    margin: 0px;
+}
+
+.education {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    padding: 0px 5px;
+    margin: 0px;
+}
+
+.title {
+    font-weight: bolder;
+    margin-right: 10px;
+    text-align: right;
+}
+
+.title-skills {
+    font-weight: bolder;
+    margin-left: 40px;
+    margin-right: 10px;
+}

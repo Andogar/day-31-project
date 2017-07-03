@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="../public/styles.css">
+</head>
+
+<body>
+    <header>
+        <a href='/index'>Home</a>
+    </header>
+    <div class='main'>
+        <div class="personal-info">
+            <img class="rounded-pic" src={{avatar}}></img>
+            <div class="inside-info">
+                <div class="single-page-name">{{name}}</div>
+                <div>
+                    {{#address.city}}
+                    <p>{{address.city}}, {{address.country}}</p>
+                    <p class='job-info'> {{#job}} {{job}}, {{company}} {{/job}} {{^job}}</p>
+                    <p class='available'> Available For Hire</p> {{/job}} </p>{{/address.city}} {{^address.city}}
+
+                    <p>{{address.country}} {{#job}} {{job}}, {{company}} {{/job}}</p>{{/address.city}}
+                </div>
+                <div class="email-and-phone">
+                    <p>{{email}}</p>
+                    <p class='phone'>{{phone}}</p>
+                </div>
+            </div>
+        </div>
+        <div class='education-and-skills'>
+            {{#university}}
+            <div class='education'>
+                <p class='title'>Education</p>
+                <p>{{university}}</p>
+            </div>{{/university}}
+        </div>
+        <div class='education-and-skills'>
+            <div class='skills'>
+                <p class='title-skills'>Skills</p>
+                <ul>{{#skills}}
+                    <li class='skills-list'>{{.}}</li>
+                    {{/skills}}</ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

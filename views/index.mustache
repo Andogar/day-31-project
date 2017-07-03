@@ -1,0 +1,27 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../public/styles.css">
+</head>
+
+<body>
+  <header>
+    <a href='/index'>Home</a>
+    <a href='/unemployed'>Unemployed Robots</a>
+    <a href='/employed'>Employed Robots</a>
+  </header>
+  <br />
+  <div class="user-list">
+    {{#users}}
+    <div class="user-card">
+      <img class="user-pic" src={{avatar}}>
+      <a href="index/{{id}}" class="name">{{name}}</a> {{#job}}
+      <p class="hired">{{job}}, {{company}}</p>{{/job}} {{^job}}
+      <p class="available">Available for Hire</p>{{/job}}
+    </div>
+    {{/users}}
+  </div>
+</body>
+
+</html>
